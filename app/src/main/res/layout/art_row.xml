@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+    <ImageView
+        android:id="@+id/artRowImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/artRowNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Text"
+            android:textSize="28sp"
+            />
+
+        <TextView
+            android:id="@+id/artRowArtistText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Text"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/artRowYearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
