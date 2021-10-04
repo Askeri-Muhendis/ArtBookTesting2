@@ -38,7 +38,7 @@ class ArtDetailsFragment @Inject constructor(
 
         //ImageView'a tıklandığında api kısmına gidicez
         binding.artImageView.setOnClickListener {
-            findNavController().navigate(ArtDetailsFragmentDirections.actionArtDetailsFragmentToImageApiFragment())
+            //findNavController().navigate(ArtDetailsFragmentDirections.actionArtDetailsFragmentToImageApiFragment())
         }
 
         //geri tuşuna basıldığında ne yapılacak onu yazıyoruz callback yazıcaz

@@ -14,15 +14,17 @@ import com.ibrahimethem.artbooktesting.util.Util.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ApplicationComponent
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 //modullümüz
+//ahmetin söylediği -> @InstallIn(SingletonComponent::class) ApplicationComponent değişmiş ve SingletonComponent olmuş
+//önceden olan -> @InstallIn(ApplicationComponent::class)
 @Module
-@InstallIn(ApplicationComponent::class)
+@InstallIn(SingletonComponent::class)
 object AppModule {
     /**retrofit-room'u build etmedik bunu yapmalıyız bunlar için dependcy injection kullanıcaz
      * tek bir sefer oluşturup her yerde kullanıcaz

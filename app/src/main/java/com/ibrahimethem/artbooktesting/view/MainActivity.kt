@@ -8,7 +8,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()  {
+
     @Inject
     lateinit var fragmentFactory: FragmentFactory
 
